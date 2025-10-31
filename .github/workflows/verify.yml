@@ -1,0 +1,24 @@
+name: Verify
+on: [push, pull_request]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify serverless code
+        working-directory: serverless-version
+        run: |
+          python -m py_compile $(git ls-files "*.py") || true
+
+      - name: Verify container code
+        working-directory: container-version
+        run: |
+          python -m py_compile $(git ls-files "*.py") || true
