@@ -1,4 +1,6 @@
 # Serverless vs Container on AWS — To-Do App Comparison
+![Verify](https://github.com/sujithaakathirvel/serverless-vs-container-aws/actions/workflows/verify.yml/badge.svg)
+
 
 This repo contains **two implementations** of the same To-Do API from my MSc dissertation:
 - **Serverless version**: AWS Lambda + API Gateway + DynamoDB
