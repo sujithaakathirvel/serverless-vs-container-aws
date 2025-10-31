@@ -21,7 +21,7 @@ The aim was to compare both in terms of **performance, scalability, cost, and de
 - **Serverless:** Auto-scales, lower cost for variable traffic, minimal maintenance.  
 - **Container:** More stable under sustained load, consistent latency, slightly higher idle cost.
 
-(Full technical analysis in `/results/comparison-summary.md`.)
+Full notes → [/results/comparison-summary.md](results/comparison-summary.md)
 
 ---
 
