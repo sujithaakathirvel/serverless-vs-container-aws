@@ -19,18 +19,16 @@ The goal is to compare **performance, cost, ease of deployment, and security** u
 ## Proof of Deployment
 
 **Serverless (Lambda)**  
-![Lambda metrics](docs/serverless/lambda-metrics.png)  
-![API proof](docs/serverless/api-proof.png)  
-![DynamoDB items](docs/serverless/dynamodb-table.png)
+![Lambda metrics](docs/serverless/lambda-metrics.png.png)  
+![API proof](docs/serverless/api.png.png)  
+![DynamoDB table](docs/serverless/DynamoDB.png)   
+![JMeter load test results (Serverless)](docs/serverless/serverless.png.png)
 
 **Container (ECS)**  
-![ECS service](docs/container/ecs-service.png)  
-![Flask app running](docs/container/flask-api-proof.png)  
-![ECS metrics](docs/container/ecs-metrics.png)
-
-**Load test**  
-![JMeter results](docs/jmeter/load-test-results.png)
-
+![ECS service](docs/container/ecs-service.png.png)  
+![Flask app running](docs/container/flask-api-proof.png.png)  
+![ECS metrics](docs/container/ecs-metrics.png.png)  
+![JMeter results](docs/container/ecs-jmeter-results.png.png)
 ---
 
 ## License
