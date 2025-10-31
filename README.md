@@ -1,35 +1,42 @@
-# Serverless vs Container on AWS — To-Do App Comparison
+# Serverless vs Container on AWS — To-Do App (My MSc Computing Project)
 
-This project contains **two implementations** of the same To-Do API from my MSc Computing dissertation:
+This is my MSc Computing dissertation project where I built the same **To-Do API** using two different AWS architectures:
+- **Serverless:** AWS Lambda + API Gateway + DynamoDB  
+- **Containerised:** Flask + Docker + ECS Fargate  
 
-- **Serverless version**: AWS Lambda + API Gateway + DynamoDB  
-- **Container version**: Flask + Docker + ECS Fargate  
-
-The goal is to compare **performance, cost, ease of deployment, and security** using real workloads.
-
----
-
-## Repo Structure
-/serverless-version → Lambda + API Gateway + DynamoDB (SAM)  
-/container-version → Flask API containerized and deployed on ECS Fargate  
-/docs → Architecture diagram, screenshots, metrics
+The aim was to compare both in terms of **performance, scalability, cost, and deployment complexity** with real test results.
 
 ---
 
-## Proof of Deployment
+## 🧩 Project Structure
 
-**Serverless (Lambda)**  
-![Lambda metrics](docs/serverless/lambda-metrics.png.png)  
-![API proof](docs/serverless/api.png.png)  
-![DynamoDB table](docs/serverless/DynamoDB.png)   
-![JMeter load test results (Serverless)](docs/serverless/serverless.png.png)
+- **/serverless-version** → The To-Do API built using AWS Lambda, API Gateway, and DynamoDB (via AWS SAM).  
+- **/container-version** → The same API built with Flask, containerised using Docker, and deployed on ECS Fargate.  
+- **/docs** → All screenshots and validation proofs from AWS (Lambda, ECS, DynamoDB, JMeter).  
+- **/results** → Summary and comparison notes from the dissertation.
 
-**Container (ECS)**  
-![ECS service](docs/container/ecs-service.png.png)  
-![Flask app running](docs/container/flask-api-proof.png.png)  
-![ECS metrics](docs/container/ecs-metrics.png.png)  
-![JMeter results](docs/container/ecs-jmeter-results.png.png)
 ---
 
-## License
+## ☁️ Summary of Findings
+- **Serverless:** Auto-scales, lower cost for variable traffic, minimal maintenance.  
+- **Container:** More stable under sustained load, consistent latency, slightly higher idle cost.
+
+(Full technical analysis in `/results/comparison-summary.md`.)
+
+---
+
+## 📸 Proof of Deployment
+All AWS and testing screenshots are organised inside the **/docs** folder:
+- `docs/serverless/` → Lambda, API Gateway, DynamoDB proofs  
+- `docs/container/` → ECS Fargate & Flask app proofs  
+- `docs/jmeter/` → Load-testing results comparing both architectures
+
+---
+
+## 🧠 Technologies Used
+AWS Lambda · API Gateway · DynamoDB · ECS Fargate · Docker · Flask · Python · CloudWatch · JMeter
+
+---
+
+## 📜 License
 MIT
