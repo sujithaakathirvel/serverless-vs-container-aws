@@ -75,10 +75,10 @@ This result is therefore reported as an observed load-testing outcome rather tha
 
 ## 📁 Project Structure
 
-serverless-version/    → Lambda, API Gateway and DynamoDB implementation
-container-version/     → Flask, Docker and ECS Fargate implementation
-docs/                  → Architecture, AWS deployment and testing evidence
-results/               → Detailed comparison results
+- `serverless-version/` — Lambda, API Gateway and DynamoDB implementation
+- `container-version/` — Flask, Docker and ECS Fargate implementation
+- `docs/` — Architecture, AWS deployment and testing evidence
+- `results/` — Detailed comparison results
 
 ---
 
